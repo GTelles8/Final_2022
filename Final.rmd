@@ -42,9 +42,25 @@ Males is the categorical variable, Covid921 vaccine administration is an explana
 
 ## Descriptive Results
 
+
+
 ## Graphical Results
 
+```{r}
+barchartGC(~infected + treatment,data=Males)
+barchartGC(~infected + treatment,data=Males, type="percent")
+
+```
+
+According the the bar graph the Males who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Men who received the vaccine  had a significant reduction in catching Covid. 
+
 ## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Males)
+rowPerc(table1)
+
+```
 
 ## Inferential
 
@@ -69,7 +85,21 @@ Females is the categorical variable, Covid921 vaccine administration is an expla
 
 ## Graphical Results
 
+```{r}
+barchartGC(~infected + treatment,data=Females)
+barchartGC(~infected + treatment,data=Females, type="percent")
+
+```
+
+According the the bar graph the Females who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Men who received the vaccine  had a significant reduction in catching Covid. 
+
 ## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Females)
+rowPerc(table1)
+
+```
 
 ## Inferential
 
@@ -93,7 +123,21 @@ LGBTQ is the categorical variable, Covid921 vaccine administration is an explana
 
 ## Graphical Results
 
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+
+```
+
+According the the bar graph the LGBTQ people who got the placebo had a lower percentage of getting Covid 19, as opposed to those who received the vaccine. The LGBTQ who received the vaccine  had a significant reduction in catching Covid. 
+
 ## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table1)
+
+```
 
 ## Inferential
 
@@ -118,7 +162,19 @@ Druggies is the categorical variable, Covid921 vaccine administration is an expl
 
 ## Graphical Results
 
+```{r}
+barchartGC(~infected + treatment,data=Druggies)
+barchartGC(~infected + treatment,data=Druggies, type="percent")
+
+```
+
 ## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Druggies)
+rowPerc(table1)
+
+```
 
 ## Inferential
 
