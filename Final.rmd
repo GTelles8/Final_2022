@@ -202,6 +202,8 @@ barchartGC(~infected + treatment,data=Druggies, type="percent")
 
 ```
 
+According the the bar graph the overwhelming majority of Drfug Using people who were infected with the virus received the vaccine. 
+
 ## Numerical Results
 
 ```{r}
@@ -209,6 +211,8 @@ table1 <- xtabs(~infected + treatment, data=Druggies)
 rowPerc(table1)
 
 ```
+
+According to the table, about 88% of vaccinated Drug Users became infected with the virus. Of those that did not get sick, placebo and vaccine treatment were almost equal.
 
 ## Inferential
 
@@ -218,5 +222,6 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The data presented indicates that of those Drug Users that did get sick, 88% of them had been vaccinated. The P Value for the vaccine is 0.000000002, which is lower than 0.050. The odds ration is 0.12, and the bar graphs and table provide the same telling data: there is a significant difference in the effectiveness of the vaccine in the Drug User population, therefor we reject the null hypothesis. The effectiveness of the vaccine in Drug Users is poor, and because of its negative ability to keep them healthy, I would not suggest using Covid921 as a vaccine for that subgroup.
 
 # Overall Results and Conclusions
