@@ -62,7 +62,7 @@ rowPerc(table1)
 
 ```
 
-The table verifies that more than double of the people that were infected by Covid 19 were given the placebo. Of those that did not get sick, placebo and vaccine treatment was almost equal.
+The table verifies that more than double of the people that were infected by Covid 19 were given the placebo. Of those that did not get sick, placebo and vaccine treatment were almost equal.
 
 ## Inferential
 
@@ -113,7 +113,7 @@ rowPerc(table1)
 
 ```
 
-The table verifies that 60% of the people that were infected by Covid 19 were given the placebo, as opposed to the 40% that were vaccinated. Of those that did not get sick, placebo and vaccine treatment was almost equal.
+The table verifies that 60% of the people that were infected by Covid 19 were given the placebo, as opposed to the 40% that were vaccinated. Of those that did not get sick, placebo and vaccine treatment were almost equal.
 
 ## Inferential
 
@@ -152,7 +152,7 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
 
-According the the bar graph the LGBTQ people who got the placebo had a lower percentage of getting Covid 19, as opposed to those who received the vaccine. The LGBTQ who received the vaccine  had a significant reduction in catching Covid. 
+According the the bar graph the overwhelming majority of LGBTQ people who were infected with the virus received the vaccine. 
 
 ## Numerical Results
 
@@ -162,6 +162,8 @@ rowPerc(table1)
 
 ```
 
+According to the table, about 84% of vaccinated LGBTQ people became infected with the virus. Of those that did not get sick, placebo and vaccine treatment were almost equal.
+
 ## Inferential
 
 ```{r}
@@ -170,7 +172,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-
+The data presented indicates that of those LGBTQ people that did get sick, 84% of them had been vaccinated. The P Value for the vaccine is 0.00000006, which is lower than 0.050. The odds ration is 0.18, and the bar graphs and table provide the same telling data: there is a significant difference in the effectiveness of the vaccine in LGBTQ populations, therefor we reject the null hypothesis. The effectiveness of the vaccine in LGBTQ populations is poor, and because of its negative ability to keep them healthy, I would not suggest using Covid921 as a vaccine for that subgroup.
 
 # Drug Users
 
