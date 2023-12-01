@@ -26,6 +26,8 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 # Males
 
+Does the Covid921 exhibit any differences between male populations?
+
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between male populations.
 
 $H_A$ There is a significant difference in effectiveness of the Covid921 vaccine between male populations.
@@ -40,9 +42,7 @@ Males = filter (FinalData, FinalData$sex == "M")
 
 Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Males is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
-## Descriptive Results
-
-
+## Results
 
 ## Graphical Results
 
@@ -62,10 +62,22 @@ rowPerc(table1)
 
 ```
 
+The table verifies that more than double of the people that were infected by Covid 19 were given the placebo. Of those that did not get sick, placebo and vaccine treatment was almost equal.
+
 ## Inferential
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+
+In Males, those who did not get sick with Covid, it was about 50/50 for who received the vaccine and who received a placebo. The more telling data indicates that of those who did get sick, those that were given the placebo were twice as likely as those that received the vaccine. 
 
 # Females
+
+Does the Covid921 exhibit any differences between female populations?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between female populations.
 
@@ -81,7 +93,7 @@ Females = filter (FinalData, FinalData$sex == "F")
 
 Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Females is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
-## Descriptive Results
+## Results
 
 ## Graphical Results
 
@@ -103,8 +115,16 @@ rowPerc(table1)
 
 ## Inferential
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
 
 # LGBTQ
+
+Does the Covid921 exhibit any differences between LGBTQ populations?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations.
 
@@ -119,7 +139,7 @@ LGBTQ = filter (FinalData, FinalData$LGBTQ == "gay")
 
 Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. LGBTQ is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
-## Descriptive Results
+## Results 
 
 ## Graphical Results
 
@@ -141,12 +161,21 @@ rowPerc(table1)
 
 ## Inferential
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-# Druggies
 
-$H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between druggie populations.
 
-$H_A$ There is a significant difference in effectiveness of the Covid921 vaccine between druggie populations.
+# Drug Users
+
+Does the Covid921 exhibit any differences between drug users populations?
+
+$H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between drug user populations.
+
+$H_A$ There is a significant difference in effectiveness of the Covid921 vaccine between drug user populations.
 
 ```{r}
 library(dplyr)
@@ -158,7 +187,7 @@ Druggies = filter (FinalData, FinalData$DrugUser == "yes")
 
 Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Drug users is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
-## Descriptive Results
+## Results
 
 ## Graphical Results
 
@@ -177,6 +206,12 @@ rowPerc(table1)
 ```
 
 ## Inferential
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 # Overall Results and Conclusions
