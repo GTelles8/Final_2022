@@ -202,7 +202,7 @@ barchartGC(~infected + treatment,data=Druggies, type="percent")
 
 ```
 
-According the the bar graph the overwhelming majority of Drfug Using people who were infected with the virus received the vaccine. 
+According the the bar graph the overwhelming majority of Drug Using people who were infected with the virus received the vaccine. 
 
 ## Numerical Results
 
@@ -226,4 +226,4 @@ The data presented indicates that of those Drug Users that did get sick, 88% of 
 
 # Overall Results and Conclusions
 
-The original question was if Covid 921 exhibited any differences in the Male, Female, LGBTQ and Drug User populations, and if it was an effective vaccine. The data in the previous graphs, tables and Chisq and Fishers test all have the same conclusion: yes, there IS a difference exhibited between those populations that received the vaccine versus those that received teh placebo. Therefor we reject the NULL hypothesis. However, the effectiveness of the vaccine within the subgroups was varied. With both Male and Female populations, the vaccine was overwhelmingly successful, and should be used for the further prevention of Covid 19. Unfotunately, the results are the exact opposite for the LGBTQ and Drug Users tested. In those cases, the effectiveness of the vaccine was overwhelmingly poor, and should definitely not be used in the future as a means for preventing the infection of those subgroups. 
+The original question was if Covid 921 exhibited any differences in the Male, Female, LGBTQ and Drug User populations, and if it was an effective vaccine. The data in the previous graphs, tables and Chisq and Fishers test all have the same conclusion: yes, there IS a difference exhibited between those populations that received the vaccine versus those that received teh placebo. Therefor we reject the NULL hypothesis. However, the effectiveness of the vaccine within the subgroups was varied. With both Male and Female populations, the vaccine was overwhelmingly successful, and should be used for the further prevention of Covid 19. Unfortunately, the results are the exact opposite for the LGBTQ and Drug Users tested. In those cases, the effectiveness of the vaccine was overwhelmingly poor, and should definitely not be used in the future as a means for preventing the infection of those subgroups. 
