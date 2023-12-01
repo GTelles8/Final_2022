@@ -1,5 +1,5 @@
 ---
-title: "Covid91 Vaccine Study Final 2023"
+title: "Covid921 Vaccine Study Final 2023"
 author: "Gracie Telles"
 output: 
   html_document:
@@ -26,7 +26,7 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 # Males
 
-Does the Covid921 exhibit any differences between male populations?
+Does the Covid921 exhibit any differences between male populations? Is the vaccine effective against the virus?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between male populations.
 
@@ -73,7 +73,7 @@ fisher.test(table1)
 ```
 
 
-In Males, those who did not get sick with Covid, it was about 50/50 for who received the vaccine and who received a placebo. The more telling data indicates that of those who did get sick, those that were given the placebo were twice as likely as those that received the vaccine. 
+The data presented indicates that of those who did get sick, they were twice as likely to have had the placebo as opposed to the vaccine. The P Value for the vaccine is 0.000000000000198, which is staggeringly lower than 0.050. The odds ration is 2.24, and the bar graphs and table provide the same telling data: There is a significant difference in the effectiveness of the vaccine in male populations, therefor we reject the null hypothesis. The effectiveness of the vaccine in male populations is positive, and I would suggest using Covid921 as a vaccine for that subgroup.
 
 # Females
 
