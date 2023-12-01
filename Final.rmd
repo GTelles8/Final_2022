@@ -52,7 +52,7 @@ barchartGC(~infected + treatment,data=Males, type="percent")
 
 ```
 
-According the the bar graph the Males who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Men who received the vaccine  had a significant reduction in catching Covid. 
+According the the bar graph the Males who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Men who received the vaccine had a significant reduction in catching Covid. 
 
 ## Numerical Results
 
@@ -73,11 +73,11 @@ fisher.test(table1)
 ```
 
 
-The data presented indicates that of those who did get sick, they were twice as likely to have had the placebo as opposed to the vaccine. The P Value for the vaccine is 0.000000000000198, which is staggeringly lower than 0.050. The odds ration is 2.24, and the bar graphs and table provide the same telling data: There is a significant difference in the effectiveness of the vaccine in male populations, therefor we reject the null hypothesis. The effectiveness of the vaccine in male populations is positive, and I would suggest using Covid921 as a vaccine for that subgroup.
+The data presented indicates that of those who did get sick, they were twice as likely to have had the placebo as opposed to the vaccine. The P Value for the vaccine is 0.000000000000198, which is staggeringly lower than 0.050. The odds ration is 2.24, and the bar graphs and table provide the same telling data: there is a significant difference in the effectiveness of the vaccine in male populations, therefor we reject the null hypothesis. The effectiveness of the vaccine in male populations is positive, and I would suggest using Covid921 as a vaccine for that subgroup.
 
 # Females
 
-Does the Covid921 exhibit any differences between female populations?
+Does the Covid921 exhibit any differences between female populations? Is the vaccine effective against the virus?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between female populations.
 
@@ -103,7 +103,7 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 ```
 
-According the the bar graph the Females who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Men who received the vaccine  had a significant reduction in catching Covid. 
+According the the bar graph the Females who got the placebo had a higher percentage of getting Covid 19, as opposed to those who received the vaccine. The Females who received the vaccine had a significant reduction in catching Covid. 
 
 ## Numerical Results
 
@@ -113,6 +113,8 @@ rowPerc(table1)
 
 ```
 
+The table verifies that 60% of the people that were infected by Covid 19 were given the placebo, as opposed to the 40% that were vaccinated. Of those that did not get sick, placebo and vaccine treatment was almost equal.
+
 ## Inferential
 
 ```{r}
@@ -121,10 +123,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The data presented indicates that of those that did get sick, 60% of them had received the placebo. The P Value for the vaccine is 0.0002732, which is lower than 0.050. The odds ration is 1.49, and the bar graphs and table provide the same telling data: there is a significant difference in the effectiveness of the vaccine in Female populations, therefor we reject the null hypothesis. The effectiveness of the vaccine in Female populations is positive, and I would suggest using Covid921 as a vaccine for that subgroup.
 
 # LGBTQ
 
-Does the Covid921 exhibit any differences between LGBTQ populations?
+Does the Covid921 exhibit any differences between LGBTQ populations? Is the vaccine effective against the virus?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations.
 
@@ -171,7 +174,7 @@ fisher.test(table1)
 
 # Drug Users
 
-Does the Covid921 exhibit any differences between drug users populations?
+Does the Covid921 exhibit any differences between drug user populations? Is the vaccine effective against the virus?
 
 $H_0$ The Covid921 vaccine does not exhibit a significant difference in effectiveness between drug user populations.
 
