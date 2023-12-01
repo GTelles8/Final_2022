@@ -1,5 +1,5 @@
 ---
-title: "Covid91 vaccine study Final2023"
+title: "Covid91 Vaccine Study Final 2023"
 author: "Gracie Telles"
 output: 
   html_document:
@@ -38,7 +38,7 @@ Males = filter (FinalData, FinalData$sex == "M")
 
 ## Methods
 
-Males is the categorical variable, Covid921 vaccine administration is an explanatory variable. Covid921 effectiveness is a response variable, therefor we use the CatCat helper file.
+Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Males is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
 ## Descriptive Results
 
@@ -79,7 +79,7 @@ Females = filter (FinalData, FinalData$sex == "F")
 
 ## Methods
 
-Females is the categorical variable, Covid921 vaccine administration is an explanatory variable. Covid921 effectiveness is a response variable, therefor we use the CatCat helper file.
+Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Females is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
 ## Descriptive Results
 
@@ -117,7 +117,7 @@ LGBTQ = filter (FinalData, FinalData$LGBTQ == "gay")
 
 ## Methods
 
-LGBTQ is the categorical variable, Covid921 vaccine administration is an explanatory variable. Covid921 effectiveness is a response variable, therefor we use the CatCat helper file.
+Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. LGBTQ is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
 ## Descriptive Results
 
@@ -156,7 +156,7 @@ Druggies = filter (FinalData, FinalData$DrugUser == "yes")
 
 ## Methods
 
-Druggies is the categorical variable, Covid921 vaccine administration is an explanatory variable. Covid921 effectiveness is a response variable, therefor we use the CatCat helper file.
+Covid921 vaccine administration is an explanatory variable, and Covid921 effectiveness is the response variable. Drug users is a categorical variable, and Covid 921 vaccine is a categorical variable, therefor we use the CatCat helper file.
 
 ## Descriptive Results
 
